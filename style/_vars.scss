@@ -8,25 +8,25 @@ $breakpoint-xxl: 1920px;
 // !MIXINS
 
 @mixin viewport-md {
-  @media screen and (min-width: $breakpoint-md) {
+  @media screen and (max-width: $breakpoint-md) {
     @content;
   }
 }
 
 @mixin viewport-lg {
-  @media screen and (min-width: $breakpoint-lg) {
+  @media screen and (max-width: $breakpoint-lg) {
     @content;
   }
 }
 
 @mixin viewport-xl {
-  @media screen and (min-width: $breakpoint-xl) {
+  @media screen and (max-width: $breakpoint-xl) {
     @content;
   }
 }
 
 @mixin viewport-xll {
-  @media screen and (min-width: $breakpoint-xxl) {
+  @media screen and (max-width: $breakpoint-xxl) {
     @content;
   }
 }
