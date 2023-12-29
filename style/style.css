@@ -134,6 +134,12 @@ body {
 .main__back-arrow {
   left: -45px;
 }
+.main__forward-arrow:hover {
+  margin-right: -5px;
+}
+.main__back-arrow:hover {
+  margin-left: -5px;
+}
 
 .container {
   padding: 0 30px;

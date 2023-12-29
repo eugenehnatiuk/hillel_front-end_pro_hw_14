@@ -71,6 +71,12 @@ body {
   &__back-arrow {
     left: -45px;
   }
+  &__forward-arrow:hover{
+   margin-right: -5px ;
+  }
+  &__back-arrow:hover{
+    margin-left: -5px 
+  }
 }
 
 .container {
