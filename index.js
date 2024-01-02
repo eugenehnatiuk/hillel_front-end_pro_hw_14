@@ -71,21 +71,22 @@
     const html = `<img src="${imageLink}" alt="${activeImage.title}" width="${activeImage.width}" height="${activeImage.height}">`;
     imageContainer.innerHTML = html;
   }
-  
+
   renderImage();
- 
 
   const forwordArrow = document.querySelector('.main__forward-arrow');
   const backwordArrow = document.querySelector('.main__back-arrow');
   backwordArrow.style.display = 'none';
 
   function updateArrowVisability() {
-    activeIndex <= 0
-      ? (backwordArrow.style.display = 'none')
-      : (backwordArrow.style.display = 'inline-block');
-    activeIndex === imagesList.length - 1
-      ? (forwordArrow.style.display = 'none')
-      : (forwordArrow.style.display = 'inline-block');
+    backwordArrow.style.display = activeIndex <= 0 ? 'none' : 'inline-block';
+    forwordArrow.style.display = activeIndex === imagesList.length - 1 ? 'none' : 'inline-block';
+    // activeIndex <= 0
+    //   ? (backwordArrow.style.display = 'none')
+    //   : (backwordArrow.style.display = 'inline-block');
+    // activeIndex === imagesList.length - 1
+    //   ? (forwordArrow.style.display = 'none')
+    //   : (forwordArrow.style.display = 'inline-block');
   }
 
   forwordArrow.addEventListener('click', () => {
